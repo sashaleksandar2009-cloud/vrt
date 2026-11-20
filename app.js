@@ -136,3 +136,7 @@ updateCounter("downloads", "stat-downloads", false);
 document.getElementById("download-btn").addEventListener("click", function() {
   updateCounter("downloads", "stat-downloads", true);
 });
+
+var dlBtn = document.getElementById("download-btn");
+dlBtn.href = "MyAntivirus.rar";
+dlBtn.setAttribute("download", "MyAntivirus.rar");
